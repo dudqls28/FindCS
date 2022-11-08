@@ -12,6 +12,9 @@
 		D54A1DFC2918EFE10052A689 /* DetailListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54A1DFB2918EFE10052A689 /* DetailListCell.swift */; };
 		D54A1DFE2918F84D0052A689 /* DetailListBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54A1DFD2918F84D0052A689 /* DetailListBackgroundView.swift */; };
 		D54A1E002918F85F0052A689 /* DetailListBackgroundViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54A1DFF2918F85F0052A689 /* DetailListBackgroundViewModel.swift */; };
+		D54A1E022919DFD50052A689 /* LocalAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54A1E012919DFD50052A689 /* LocalAPI.swift */; };
+		D54A1E052919E7B00052A689 /* LocalNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54A1E042919E7B00052A689 /* LocalNetwork.swift */; };
+		D54A1E082919EA2C0052A689 /* LocationInformationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54A1E072919EA2C0052A689 /* LocationInformationModel.swift */; };
 		D5F0D76E2918AABF0086BC54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F0D76D2918AABF0086BC54 /* AppDelegate.swift */; };
 		D5F0D7702918AABF0086BC54 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F0D76F2918AABF0086BC54 /* SceneDelegate.swift */; };
 		D5F0D7772918AAC10086BC54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5F0D7762918AAC10086BC54 /* Assets.xcassets */; };
@@ -19,7 +22,6 @@
 		D5F0D7852918AAC10086BC54 /* FindCSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F0D7842918AAC10086BC54 /* FindCSTests.swift */; };
 		D5F0D78F2918AAC10086BC54 /* FindCSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F0D78E2918AAC10086BC54 /* FindCSUITests.swift */; };
 		D5F0D7912918AAC10086BC54 /* FindCSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F0D7902918AAC10086BC54 /* FindCSUITestsLaunchTests.swift */; };
-		D5F0D7E62918AE1E0086BC54 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5F0D7E52918AE1E0086BC54 /* OpenGLES.framework */; };
 		D5F0D7E82918AE260086BC54 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5F0D7E72918AE260086BC54 /* SystemConfiguration.framework */; };
 		D5F0D7EA2918AE310086BC54 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5F0D7E92918AE310086BC54 /* CoreLocation.framework */; };
 		D5F0D7EC2918AE390086BC54 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5F0D7EB2918AE390086BC54 /* QuartzCore.framework */; };
@@ -103,6 +105,9 @@
 		D54A1DFB2918EFE10052A689 /* DetailListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListCell.swift; sourceTree = "<group>"; };
 		D54A1DFD2918F84D0052A689 /* DetailListBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListBackgroundView.swift; sourceTree = "<group>"; };
 		D54A1DFF2918F85F0052A689 /* DetailListBackgroundViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListBackgroundViewModel.swift; sourceTree = "<group>"; };
+		D54A1E012919DFD50052A689 /* LocalAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAPI.swift; sourceTree = "<group>"; };
+		D54A1E042919E7B00052A689 /* LocalNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNetwork.swift; sourceTree = "<group>"; };
+		D54A1E072919EA2C0052A689 /* LocationInformationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInformationModel.swift; sourceTree = "<group>"; };
 		D5F0D76A2918AABF0086BC54 /* FindCS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindCS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5F0D76D2918AABF0086BC54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5F0D76F2918AABF0086BC54 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -149,7 +154,6 @@
 				D5F0D8092918CB290086BC54 /* RxRelay in Frameworks */,
 				D5F0D8112918CB290086BC54 /* RxTest in Frameworks */,
 				D5F0D8132918CB290086BC54 /* RxTest-Dynamic in Frameworks */,
-				D5F0D7E62918AE1E0086BC54 /* OpenGLES.framework in Frameworks */,
 				D5F0D8182918CB620086BC54 /* SnapKit-Dynamic in Frameworks */,
 				D5F0D80D2918CB290086BC54 /* RxSwift in Frameworks */,
 				D5F0D80B2918CB290086BC54 /* RxRelay-Dynamic in Frameworks */,
@@ -233,6 +237,25 @@
 			path = Headers;
 			sourceTree = "<group>";
 		};
+		D54A1E032919E79C0052A689 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D54A1E012919DFD50052A689 /* LocalAPI.swift */,
+				D54A1E042919E7B00052A689 /* LocalNetwork.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		D54A1E062919EA120052A689 /* LocationInfo */ = {
+			isa = PBXGroup;
+			children = (
+				D5F0D7FA2918C83E0086BC54 /* LocationInformationViewController.swift */,
+				D5F0D7FD2918C89A0086BC54 /* LocationInformationViewModel.swift */,
+				D54A1E072919EA2C0052A689 /* LocationInformationModel.swift */,
+			);
+			path = LocationInfo;
+			sourceTree = "<group>";
+		};
 		D5F0D7612918AABF0086BC54 = {
 			isa = PBXGroup;
 			children = (
@@ -257,6 +280,7 @@
 		D5F0D76C2918AABF0086BC54 /* FindCS */ = {
 			isa = PBXGroup;
 			children = (
+				D54A1E032919E79C0052A689 /* Network */,
 				D5F0D7FC2918C84C0086BC54 /* Presentation */,
 				D5F0D7E32918ADD60086BC54 /* BridgingHeader.h */,
 				D5F0D76D2918AABF0086BC54 /* AppDelegate.swift */,
@@ -315,8 +339,7 @@
 		D5F0D7FC2918C84C0086BC54 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				D5F0D7FA2918C83E0086BC54 /* LocationInformationViewController.swift */,
-				D5F0D7FD2918C89A0086BC54 /* LocationInformationViewModel.swift */,
+				D54A1E062919EA120052A689 /* LocationInfo */,
 				D54A1DFB2918EFE10052A689 /* DetailListCell.swift */,
 				D54A1DFD2918F84D0052A689 /* DetailListBackgroundView.swift */,
 				D54A1DFF2918F85F0052A689 /* DetailListBackgroundViewModel.swift */,
@@ -476,11 +499,14 @@
 				D54A1DFE2918F84D0052A689 /* DetailListBackgroundView.swift in Sources */,
 				D54A1E002918F85F0052A689 /* DetailListBackgroundViewModel.swift in Sources */,
 				D5F0D7F72918C5CC0086BC54 /* KLDocument.swift in Sources */,
+				D54A1E052919E7B00052A689 /* LocalNetwork.swift in Sources */,
 				D5F0D7FB2918C83E0086BC54 /* LocationInformationViewController.swift in Sources */,
 				D54A1DD22918E6750052A689 /* MTMapViewError.swift in Sources */,
+				D54A1E022919DFD50052A689 /* LocalAPI.swift in Sources */,
 				D54A1DFC2918EFE10052A689 /* DetailListCell.swift in Sources */,
 				D5F0D76E2918AABF0086BC54 /* AppDelegate.swift in Sources */,
 				D5F0D7F92918C7AD0086BC54 /* DetailListCellData.swift in Sources */,
+				D54A1E082919EA2C0052A689 /* LocationInformationModel.swift in Sources */,
 				D5F0D7702918AABF0086BC54 /* SceneDelegate.swift in Sources */,
 				D5F0D7FE2918C89A0086BC54 /* LocationInformationViewModel.swift in Sources */,
 			);
@@ -674,6 +700,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = /Users/hwict/swiftPractice/FindCS/FindCS/BridgingHeader.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE_SKIPPED_SDK_FRAMEWORKS = "OpenGLES OpenGL";
 			};
 			name = Debug;
 		};
@@ -707,6 +734,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = /Users/hwict/swiftPractice/FindCS/FindCS/BridgingHeader.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE_SKIPPED_SDK_FRAMEWORKS = "OpenGLES OpenGL";
 			};
 			name = Release;
 		};
